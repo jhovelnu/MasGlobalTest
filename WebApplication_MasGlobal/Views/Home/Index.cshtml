@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+<div style="margin: 10px;">
+
+    <div class="input-group mb-3">
+        <div class="input-group">
+            <input type="text" id="employeeId" class="form-control" placeholder="Id_Employee" style="float: right;" />
+            <span class="input-group-btn">
+                <button class="btn btn-outline-secondary" type="button" onclick="getData()">Get_Employees</button>
+            </span>
+        </div>
+    </div>
+
+    <span id="error"></span>
+    <br /><br />
+    <table class="table" id="data">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">CalculatedSalary</th>
+                <th scope="col">ContractType</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+    function getData() {
+        console.log("starting...");
+        var id = $("#employeeId").val();
+
+        if (id !== '') {
+            if (isNaN(id)) { alert("The id is not a number"); return; }
+        }
+
+        var url = "api/employees";
+        var success = getAllCallback;
+
+        if (id !== '') {
+            url += "/" + id;
+            success = getByIdCallback;
+        }
+
+        $("#error").html("");
+        $("#data").find("tr:gt(1)").remove();
+        $.ajax({
+            url: url,
+            success: success,
+            error: function (error) {
+                $("#error").html("An error has occurred, try again");
+                console.log(error);
+            }
+        })
+    }
+
+    function addRows(data) {
+        $('#data tr:last').after('<tr><td>' + data['id'] + '</td><td>' + data['name'] + '</td><td>' + Intl.NumberFormat("es-CO").format(data['calculatedSalary']) + '</td><td>' + data['contractType'] + '</td></tr>');
+    }
+
+    function getAllCallback(data) {
+        console.log(data);
+        for (i in data) { addRows(data[i]); }
+    }
+
+    function getByIdCallback(data) {
+        console.log(data);
+        if (data == undefined) { $("#error").html("El id no fue encontrado"); }
+        else { addRows(data); }
+    }</script>

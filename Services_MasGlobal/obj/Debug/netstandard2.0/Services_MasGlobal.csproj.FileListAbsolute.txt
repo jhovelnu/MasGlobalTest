@@ -1,0 +1,13 @@
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Services_MasGlobal.deps.json
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Services_MasGlobal.dll
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Services_MasGlobal.pdb
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.csprojAssemblyReference.cache
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.AssemblyInfoInputs.cache
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.AssemblyInfo.cs
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.dll
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.pdb
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Core_MasGlobal.dll
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Data_MasGlobal.dll
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Core_MasGlobal.pdb
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\bin\Debug\netstandard2.0\Data_MasGlobal.pdb
+C:\Users\jhovelnu\Desktop\Prueba\WebApplication_MasGlobal\Services_MasGlobal\obj\Debug\netstandard2.0\Services_MasGlobal.csproj.CopyComplete
